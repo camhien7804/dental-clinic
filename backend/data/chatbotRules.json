@@ -1,0 +1,58 @@
+{
+  "faq": [
+    {
+      "keywords": ["giờ làm", "thời gian mở cửa", "time open", "working hours"],
+      "answer": "⏰ Phòng khám mở cửa từ 8h – 20h, tất cả các ngày trong tuần."
+    },
+    {
+      "keywords": ["địa chỉ", "address", "ở đâu", "vị trí phòng khám"],
+      "answer": "📍 123 Nguyễn Văn Cừ, Quận 5, TP.HCM."
+    },
+    {
+      "keywords": ["hotline", "dien thoai", "phone number"],
+      "answer": "📞 Hotline: 0909-123-456."
+    },
+    {
+      "keywords": ["bảo hiểm", "support insurance"],
+      "answer": "📑 Có hỗ trợ xuất hóa đơn bảo hiểm y tế & tư nhân."
+    },
+    {
+      "keywords": ["thanh toán", "payment"],
+      "answer": "💳 Thanh toán bằng tiền mặt, thẻ, hoặc trả góp 0% qua ngân hàng."
+    }
+  ],
+  "symptoms": [
+    {
+      "keywords": ["dau rang", "nhuc rang", "toothache", "rang dau", "rang bi dau"],
+      "reply": "🤕 Có thể bạn bị sâu răng hoặc viêm tủy. Nên khám để xác định chính xác.",
+      "services": ["Khám tổng quát", "Chữa tủy"]
+    },
+    {
+      "keywords": ["ê buốt", "sensitive teeth", "nhạy cảm", "nước lạnh", "ê buốt"],
+      "reply": "⚡ Răng ê buốt có thể do mòn men hoặc viêm tủy. Khuyến nghị: kiểm tra và trám/răng tẩy tế bào nếu cần.",
+      "services": ["Trám răng", "Khám tổng quát"]
+    },
+    {
+      "keywords": ["răng khôn", "wisdom tooth", "răng khôn", "răng khon"],
+      "reply": "😖 Răng khôn mọc lệch/ngầm thường cần nhổ. Có thể cần chụp X-quang trước khi quyết định.",
+      "services": ["Nhổ răng khôn", "Chụp X-quang"]
+    },
+    {
+      "keywords": ["răng vàng", "răng bị vàng", "yellow teeth", "vang rang", "vang răng"],
+      "reply": "😁 Răng bị vàng có thể do mảng bám, đồ uống, thuốc lá. Giải pháp: lấy cao + tẩy trắng chuyên nghiệp.",
+      "services": ["Lấy cao răng", "Tẩy trắng răng"]
+    }
+  ],
+  "tips": [
+    "💡 Đánh răng sau ăn 30 phút để tránh mòn men răng.",
+    "🦷 Dùng chỉ nha khoa thay vì tăm xỉa để bảo vệ nướu.",
+    "🥤 Hạn chế nước ngọt có gas và nước màu để tránh ố vàng.",
+    "🍎 Ăn thực phẩm giòn (táo, cà rốt) giúp loại mảng bám tự nhiên.",
+    "😴 Nếu nghiến răng khi ngủ, hãy thử mang máng bảo vệ răng."
+  ],
+  "smalltalk": [
+    { "keywords": ["xin chào", "hello", "hi"], "answer": "👋 Xin chào! Tôi là Trợ lý nha sĩ AI. Bạn cần tư vấn gì hôm nay?" },
+    { "keywords": ["cảm ơn", "thank you", "thanks"], "answer": "🙏 Rất vui được giúp bạn. Hãy giữ nụ cười rạng rỡ nhé!" },
+    { "keywords": ["tạm biệt", "bye"], "answer": "👋 Tạm biệt, hẹn gặp lại bạn tại phòng khám!" }
+  ]
+}

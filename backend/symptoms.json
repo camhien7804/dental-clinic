@@ -1,0 +1,34 @@
+[
+  {
+    "keywords": ["đau răng", "nhai"],
+    "reply": "🤕 Có thể bạn bị sâu răng hoặc viêm tủy.",
+    "services": [
+      { "slug": "kham-tong-quat", "name": "Khám tổng quát" },
+      { "slug": "chua-tuy", "name": "Chữa tủy" }
+    ]
+  },
+  {
+    "keywords": ["ê buốt", "nước lạnh", "đồ lạnh"],
+    "reply": "⚡ Triệu chứng ê buốt thường do mòn men hoặc viêm tủy.",
+    "services": [
+      { "slug": "tram-rang", "name": "Trám răng" },
+      { "slug": "kham-tong-quat", "name": "Khám tổng quát" }
+    ]
+  },
+  {
+    "keywords": ["răng khôn"],
+    "reply": "😖 Răng khôn mọc lệch/ngầm có thể gây viêm, đau nhức.",
+    "services": [
+      { "slug": "nho-rang-khon", "name": "Nhổ răng khôn" },
+      { "slug": "chup-xquang", "name": "Chụp X-quang" }
+    ]
+  },
+  {
+    "keywords": ["hôi miệng"],
+    "reply": "😬 Hôi miệng thường do cao răng, viêm nướu hoặc sâu răng.",
+    "services": [
+      { "slug": "lay-cao-rang", "name": "Lấy cao răng" },
+      { "slug": "kham-tong-quat", "name": "Khám tổng quát" }
+    ]
+  }
+]

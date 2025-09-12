@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Niềng răng có đau không?",
+    "slug": "nieng-rang-co-dau-khong",
+    "content": "Trong vài ngày đầu niềng răng có thể hơi ê và khó chịu. Cảm giác này sẽ giảm dần sau 1-2 tuần.",
+    "category": "Chỉnh nha",
+    "tags": ["niềng răng", "chỉnh nha"]
+  },
+  {
+    "title": "Tẩy trắng răng bao lâu thì trắng?",
+    "slug": "tay-trang-rang-bao-lau",
+    "content": "Thông thường, tẩy trắng răng laser có hiệu quả ngay sau 1 lần điều trị và duy trì từ 1-2 năm tùy chế độ ăn uống.",
+    "category": "Thẩm mỹ",
+    "tags": ["tẩy trắng", "thẩm mỹ"]
+  },
+  {
+    "title": "Cách chăm sóc răng sau khi trám",
+    "slug": "cham-soc-rang-sau-tram",
+    "content": "Sau khi trám răng, nên tránh nhai đồ cứng và hạn chế thức ăn quá nóng hoặc quá lạnh trong 24 giờ đầu.",
+    "category": "Nha khoa tổng quát",
+    "tags": ["trám răng", "chăm sóc"]
+  },
+  {
+    "title": "Khi nào nên nhổ răng khôn?",
+    "slug": "khi-nao-nho-rang-khon",
+    "content": "Răng khôn mọc lệch, mọc ngầm hoặc gây đau nhức, viêm nhiễm thì nên nhổ càng sớm càng tốt để tránh biến chứng.",
+    "category": "Phẫu thuật",
+    "tags": ["răng khôn", "nhổ răng"]
+  },
+  {
+    "title": "Trồng răng Implant mất bao lâu?",
+    "slug": "trong-rang-implant-mat-bao-lau",
+    "content": "Trồng Implant mất khoảng 3-6 tháng để tích hợp xương. Với công nghệ mới có thể rút ngắn xuống còn 1-2 tháng.",
+    "category": "Phục hình",
+    "tags": ["implant", "phục hình"]
+  },
+  {
+    "title": "Khám nha khoa định kỳ có cần thiết không?",
+    "slug": "kham-nha-khoa-dinh-ky",
+    "content": "Khám nha khoa định kỳ 6 tháng/lần giúp phát hiện sớm sâu răng, viêm nướu và phòng ngừa biến chứng.",
+    "category": "Nha khoa tổng quát",
+    "tags": ["khám răng", "định kỳ"]
+  },
+  {
+    "title": "Dán sứ Veneer có bền không?",
+    "slug": "dan-su-veneer-co-ben-khong",
+    "content": "Dán sứ Veneer có độ bền từ 10-15 năm nếu chăm sóc đúng cách. Đây là phương pháp thẩm mỹ ít mài răng.",
+    "category": "Thẩm mỹ",
+    "tags": ["veneer", "thẩm mỹ"]
+  },
+  {
+    "title": "Trẻ em có nên dùng Fluoride?",
+    "slug": "tre-em-co-nen-dung-fluoride",
+    "content": "Fluoride giúp ngừa sâu răng hiệu quả cho trẻ, nên bôi Fluoride định kỳ theo chỉ định của nha sĩ.",
+    "category": "Nha khoa trẻ em",
+    "tags": ["fluoride", "trẻ em"]
+  },
+  {
+    "title": "Có nên nhổ răng sữa sớm?",
+    "slug": "co-nen-nho-rang-sua-som",
+    "content": "Không nên nhổ răng sữa quá sớm vì có thể ảnh hưởng đến sự mọc răng vĩnh viễn. Nên tham khảo ý kiến nha sĩ.",
+    "category": "Nha khoa trẻ em",
+    "tags": ["răng sữa", "trẻ em"]
+  },
+  {
+    "title": "Chế độ ăn uống sau khi cấy Implant",
+    "slug": "che-do-an-sau-implant",
+    "content": "Sau khi cấy Implant, nên ăn thức ăn mềm trong tuần đầu và tránh nhai mạnh ở vùng cấy ghép.",
+    "category": "Phục hình",
+    "tags": ["implant", "ăn uống"]
+  }
+]

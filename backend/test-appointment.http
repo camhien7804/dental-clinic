@@ -1,0 +1,40 @@
+### 1. Đăng ký bệnh nhân mới
+POST http://localhost:7000/api/v1/auth/patient/register
+Content-Type: application/json
+
+{
+  "name": "Nguyễn Văn B",
+  "email": "patient2@demo.com",
+  "password": "123456",
+  "gender": "Nam",
+  "phone": "0909123456",
+  "dob": "1995-05-10",
+  "address": "123 Nguyễn Trãi, Q5, TP.HCM"
+}
+
+###
+
+### 2. Đăng nhập bệnh nhân
+# 👉 Copy token từ response này để test đặt lịch
+POST http://localhost:7000/api/v1/auth/patient/login
+Content-Type: application/json
+
+{
+  "email": "patient2@demo.com",
+  "password": "123456"
+}
+
+###
+
+### 3. Đặt lịch hẹn (dùng token từ bước 2)
+POST http://localhost:7000/api/v1/appointments
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "dentist": "64f123abc1234567890a1b2d",       // thay id bác sĩ trong DB
+  "serviceId": "64f123abc1234567890a1b2f",     // thay id dịch vụ trong DB
+  "startAt": "2025-08-25T10:00:00.000Z",
+  "endAt": "2025-08-25T10:30:00.000Z",
+  "notes": "Đặt lịch khám tổng quát"
+}
