@@ -7,7 +7,7 @@
 //  { type: "cards", text: "...", cards: [ { name, description, price, image, link } ] }
 
 import Service from "../models/Service.js";
-import Appointment from "../models/Appointment.js";
+import Appointment from "../models/appointment.js";
 import Post from "../models/Post.js";
 
 /* ---------------- RULES (embedded JSON-like) ----------------
