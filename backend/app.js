@@ -25,6 +25,7 @@ const app = express();
 const allowedOrigins = [
   process.env.FRONTEND_URL_ONE || "http://localhost:5173",
   process.env.FRONTEND_URL_TWO || "http://localhost:3000",
+  "https://dental-clinic-5gnk.onrender.com"  
 ];
 
 const corsOptions = {
