@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import express from "express";
 import app from "./app.js";
 import { dbConnection } from "./database/dbConnection.js";
+import cors from "cors";
 
 // ESM: tạo __dirname
 const __filename = fileURLToPath(import.meta.url);
@@ -12,33 +13,33 @@ const __dirname = path.dirname(__filename);
 // Load biến môi trường
 dotenv.config({ path: path.resolve(__dirname, "config.env") });
 
-// ====== CORS config (nếu dùng trực tiếp ở đây, còn bạn đã có trong app.js thì có thể giữ nguyên ở app.js) ======
-import cors from "cors";
+// ====== CORS config ======
 const allowedOrigins = [
   process.env.FRONTEND_URL_ONE || "http://localhost:5173",
   process.env.FRONTEND_URL_TWO || "http://localhost:3000",
-  process.env.FRONTEND_URL_RENDER || "https://nhakhoaou.onrender.com",
+  process.env.FRONTEND_URL_RENDER || "https://dental-clinic-5gnk.onrender.com",
 ];
 
 const corsOptions = {
   origin: function (origin, callback) {
-    if (!origin) return callback(null, true); // Cho phép Postman/mobile app
+    if (!origin) return callback(null, true); // Cho phép request không có origin (Postman, curl)
     if (allowedOrigins.includes(origin)) return callback(null, true);
     console.warn(`❌ Blocked CORS request from: ${origin}`);
     return callback(new Error("Not allowed by CORS"));
   },
   credentials: true,
 };
+
 app.use(cors(corsOptions));
 
-// ====== Serve frontend build ======
+// ====== Serve frontend build (chỉ khi deploy) ======
 if (process.env.NODE_ENV === "production") {
   const frontendPath = path.join(__dirname, "../frontend/dist");
 
-  // Serve static files (css, js, images...)
+  // Serve static assets (CSS, JS, images…)
   app.use(express.static(frontendPath));
 
-  // Catch-all route → index.html
+  // React Router fallback
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(frontendPath, "index.html"));
   });
