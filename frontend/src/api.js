@@ -1,4 +1,4 @@
-// src/api.js
+// frontend/src/api.js
 import axios from "axios";
 
 const BASE = import.meta.env.VITE_API_BASE || "http://localhost:7000/api/v1";
@@ -8,7 +8,7 @@ const api = axios.create({
   withCredentials: true,
 });
 
-// Gắn token cho mọi request (kể cả F5 lại trang)
+// Gắn token
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token && !config.headers.Authorization) {
@@ -17,16 +17,13 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// Nếu 401 -> xóa token + chuyển về /login?redirect=…
+// Xử lý lỗi 401
 api.interceptors.response.use(
   (res) => res,
   (err) => {
-    const status = err?.response?.status;
-    if (status === 401) {
-      try {
-        localStorage.removeItem("token");
-        localStorage.removeItem("u");
-      } catch (_) {}
+    if (err?.response?.status === 401) {
+      localStorage.removeItem("token");
+      localStorage.removeItem("u");
       const url = window.location.pathname + (window.location.search || "");
       window.location.href = `/login?redirect=${encodeURIComponent(url)}`;
     }
